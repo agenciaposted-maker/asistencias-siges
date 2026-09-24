@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo instalar "Asistencias SIGES"</title>
+<style>
+  :root{
+    --azul:#2f5597; --azul-osc:#24406f; --azul-claro:#e8eef7; --azul-suave:#f4f7fc;
+    --texto:#1f2733; --suave:#5b6470; --ok:#1b7a3d; --ok-fondo:#eaf6ee; --borde:#dcdfe6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:"Segoe UI",system-ui,Arial,sans-serif; color:var(--texto);
+    line-height:1.5; margin:0; padding:24px; background:#f0f2f5; font-size:14px;
+  }
+  .hoja{
+    max-width:820px; margin:0 auto; background:#fff; padding:26px 30px;
+    border-radius:12px; box-shadow:0 2px 14px rgba(0,0,0,.08);
+  }
+  header{border-bottom:3px solid var(--azul); padding-bottom:12px; margin-bottom:16px;}
+  h1{font-size:22px; color:var(--azul); margin:0;}
+  .sub{color:var(--suave); margin-top:3px; font-size:13px;}
+  h2{font-size:15px; color:var(--azul); margin:20px 0 8px; display:flex; align-items:center; gap:8px;}
+  .antes{background:var(--azul-suave); border:1px solid var(--borde); border-radius:9px; padding:12px 16px; margin-bottom:6px;}
+  .antes ul{margin:6px 0 0; padding-left:20px;}
+  ol.pasos{counter-reset:paso; list-style:none; padding:0; margin:0;}
+  ol.pasos > li{
+    counter-increment:paso; position:relative; padding:12px 12px 12px 52px; margin:10px 0;
+    border:1px solid var(--borde); border-radius:9px; background:#fff;
+  }
+  ol.pasos > li::before{
+    content:counter(paso); position:absolute; left:12px; top:12px;
+    width:28px; height:28px; border-radius:50%; background:var(--azul); color:#fff;
+    font-weight:700; display:flex; align-items:center; justify-content:center; font-size:14px;
+  }
+  ol.pasos b{color:var(--azul-osc);}
+  .navs{margin:6px 0 0; padding-left:2px; list-style:none;}
+  .navs li{margin:3px 0;}
+  .pista{display:block; color:var(--suave); font-size:12.5px; margin-top:6px;}
+  code{background:#eef1f6; padding:2px 7px; border-radius:5px; font-size:13px; font-family:Consolas,monospace; color:var(--azul-osc);}
+  .seguro{display:flex; gap:10px; background:var(--ok-fondo); border-radius:9px; padding:12px 16px; margin:16px 0; font-size:13.5px;}
+  .seguro .ic{font-size:20px;}
+  .faq{margin-top:10px;}
+  .faq h2{margin-bottom:6px;}
+  .faq p{margin:7px 0; font-size:13px;}
+  .faq b{color:var(--azul-osc);}
+  footer{margin-top:18px; border-top:1px solid var(--borde); padding-top:10px; color:var(--suave); font-size:12px; text-align:center;}
+  .imprimir{text-align:center; margin:0 auto 14px; max-width:820px;}
+  .imprimir button{
+    background:var(--azul); color:#fff; border:none; border-radius:8px; padding:9px 18px;
+    font-size:13px; font-weight:600; cursor:pointer;
+  }
+  @media print{
+    body{background:#fff; padding:0; font-size:12px;}
+    .hoja{box-shadow:none; max-width:100%; padding:0;}
+    .imprimir{display:none;}
+    ol.pasos > li{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="imprimir">
+    <button onclick="window.print()">🖨️ Imprimir o guardar como PDF</button>
+  </div>
+
+  <div class="hoja">
+    <header>
+      <h1>Cómo instalar “Asistencias SIGES”</h1>
+      <div class="sub">Guía rápida para docentes · se hace <b>una sola vez</b> · toma unos 5 minutos.</div>
+    </header>
+
+    <div class="antes">
+      <b>Antes de empezar necesitás:</b>
+      <ul>
+        <li>Una <b>computadora</b> (Windows o Mac) con un navegador <b>basado en Chromium</b>:
+          <b>Chrome</b>, <b>Brave</b>, <b>Edge</b>, <b>Opera</b> o <b>Vivaldi</b>. Con cualquiera
+          de ellos los pasos son casi iguales.</li>
+        <li>El archivo que te pasaron: <b>siges-asistencias-1.2.0.zip</b> (suele quedar en “Descargas”).</li>
+      </ul>
+    </div>
+
+    <ol class="pasos">
+      <li>
+        <b>Descomprimí el archivo.</b> Buscá <code>siges-asistencias-1.2.0.zip</code>. En Windows: clic
+        derecho → <b>“Extraer todo”</b>. En Mac: doble clic. Queda una carpeta llamada
+        <b>siges-asistencias</b>. Guardala en un lugar fijo (por ejemplo, tu Escritorio) y
+        <b>no la muevas ni la borres</b>: la herramienta vive dentro de esa carpeta.
+      </li>
+      <li>
+        <b>Abrí la página de extensiones de tu navegador.</b> Escribí esto en la barra de direcciones
+        (donde va la dirección de las páginas) y apretá Enter, según tu navegador:
+        <ul class="navs">
+          <li>Chrome → <code>chrome://extensions</code></li>
+          <li>Brave → <code>brave://extensions</code></li>
+          <li>Edge → <code>edge://extensions</code></li>
+          <li>Opera → <code>opera://extensions</code></li>
+          <li>Vivaldi → <code>vivaldi://extensions</code></li>
+        </ul>
+        <span class="pista">Si no lo recordás: es el menú <b>⋮</b> (arriba a la derecha) →
+        <b>Extensiones</b> → <b>Administrar extensiones</b>.</span>
+      </li>
+      <li>
+        <b>Activá el “Modo de desarrollador”.</b> Es un pequeño interruptor que hay que encender:
+        <ul class="navs">
+          <li><b>Chrome, Brave, Opera, Vivaldi:</b> arriba a la derecha.</li>
+          <li><b>Edge:</b> abajo a la izquierda (columna “Modo de desarrollador”).</li>
+        </ul>
+      </li>
+      <li>
+        <b>Cargá la herramienta.</b> Tocá el botón <b>“Cargar descomprimida”</b> (en Edge se llama
+        <b>“Cargar desempaquetado”</b>; en Opera/Vivaldi, <b>“Cargar extensión sin empaquetar”</b>)
+        y elegí la carpeta <b>siges-asistencias</b> que descomprimiste en el paso&nbsp;1. Debería
+        aparecer <b>“Asistencias SIGES”</b> en la lista.
+      </li>
+      <li>
+        <b>¡Usala!</b> Entrá a SIGES e iniciá sesión como siempre. Andá a <b>Control de asistencia</b>.
+        A la derecha aparece el panel; si no lo ves, tocá el botón <b>“☰ Asistencias”</b>.
+        La primera vez, dejá activado el <b>“Modo práctica”</b> para ver que todo salga bien sin guardar nada.
+      </li>
+    </ol>
+
+    <div class="seguro">
+      <span class="ic">🔒</span>
+      <span><b>Es seguro.</b> La herramienta trabaja dentro de la sesión que vos ya abriste.
+      <b>No te pide ni guarda tu usuario ni tu contraseña</b>, y nada sale de tu computadora.</span>
+    </div>
+
+    <div class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <p><b>Al abrir el navegador me sale un aviso de “desactivar extensiones en modo desarrollador”.</b>
+      Es normal. Tocá <b>“Cancelar”</b> o <b>“Conservar”</b> y seguí trabajando; no pasa nada.</p>
+      <p><b>Moví la carpeta y dejó de funcionar.</b> La herramienta necesita la carpeta en su lugar.
+      Volvé a la página de extensiones y cargala de nuevo (paso&nbsp;4) desde donde la hayas dejado.</p>
+      <p><b>Quiero quitarla.</b> En la misma página de extensiones, tocá <b>“Quitar”</b> en
+      “Asistencias SIGES”.</p>
+      <p><b>No me deja activar el modo de desarrollador.</b> Si es una computadora de la escuela, puede
+      tener restricciones puestas por quien la administra. Consultalo con esa persona.</p>
+      <p><b>¿Sirve en el celular?</b> No: es una herramienta de computadora (y SIGES se maneja
+      mejor así). Tampoco funciona en Firefox ni en Safari; usá Chrome, Brave, Edge, Opera o
+      Vivaldi.</p>
+    </div>
+
+    <footer>
+      <b>Asistencias SIGES</b> · v1.2.0 — Marcá la asistencia de todo tu grado de una sola vez.<br>
+      © 2026 Lic. Francisco Santiago Monzón Contreras · Pösted® · Todos los derechos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>

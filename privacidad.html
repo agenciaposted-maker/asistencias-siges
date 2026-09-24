@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+  Asistencias SIGES — Política de privacidad
+  Copyright © 2026 Lic. Francisco Santiago Monzón Contreras · Pösted®
+  Todos los derechos reservados.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad — Asistencias SIGES</title>
+<style>
+  :root{
+    --azul:#2f5597; --azul-osc:#24406f; --azul-claro:#e8eef7; --azul-suave:#f4f7fc;
+    --texto:#1f2733; --suave:#5b6470; --ok:#1b7a3d; --ok-fondo:#eaf6ee;
+    --warn:#b8860b; --warn-fondo:#fff7e6; --borde:#dcdfe6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:"Segoe UI",system-ui,Arial,sans-serif; color:var(--texto);
+    line-height:1.55; margin:0; padding:24px; background:#f0f2f5; font-size:14px;
+  }
+  .hoja{
+    max-width:820px; margin:0 auto; background:#fff; padding:28px 34px;
+    border-radius:12px; box-shadow:0 2px 14px rgba(0,0,0,.08);
+  }
+  header{border-bottom:3px solid var(--azul); padding-bottom:12px; margin-bottom:16px;}
+  h1{font-size:22px; color:var(--azul); margin:0;}
+  .sub{color:var(--suave); margin-top:4px; font-size:13px;}
+  h2{font-size:15px; color:var(--azul); margin:22px 0 6px; padding-top:4px;}
+  p{margin:8px 0;}
+  .resumen{background:var(--azul-suave); border:1px solid var(--borde); border-radius:10px; padding:14px 18px; margin-bottom:8px;}
+  .resumen b{color:var(--azul-osc);}
+  ul.simple{margin:6px 0; padding-left:20px;}
+  ul.simple li{margin:5px 0;}
+  .seguro{display:flex; gap:10px; background:var(--ok-fondo); border-radius:9px; padding:12px 16px; margin:14px 0; font-size:13.5px;}
+  .seguro .ic{font-size:19px;}
+  code{background:#eef1f6; padding:2px 6px; border-radius:5px; font-size:13px; font-family:Consolas,monospace; color:var(--azul-osc);}
+  a{color:var(--azul);}
+  footer{margin-top:22px; border-top:1px solid var(--borde); padding-top:12px; color:var(--suave); font-size:12px; text-align:center;}
+  .imprimir{text-align:center; margin:0 auto 14px; max-width:820px;}
+  .imprimir button{background:var(--azul); color:#fff; border:none; border-radius:8px; padding:9px 18px; font-size:13px; font-weight:600; cursor:pointer;}
+  @media print{
+    body{background:#fff; padding:0; font-size:12px;}
+    .hoja{box-shadow:none; max-width:100%; padding:0;}
+    .imprimir{display:none;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="imprimir">
+    <button onclick="window.print()">🖨️ Imprimir o guardar como PDF</button>
+  </div>
+
+  <div class="hoja">
+    <header>
+      <h1>Política de privacidad — “Asistencias SIGES”</h1>
+      <div class="sub">Versión 1.2.0 · Última actualización: septiembre de 2026</div>
+    </header>
+
+    <div class="resumen">
+      <b>En una línea:</b> “Asistencias SIGES” trabaja <b>solo dentro de tu computadora</b>, en la
+      sesión de SIGES que vos ya abriste. <b>No envía ningún dato a ningún servidor</b>, no recopila
+      información, no vende nada y no pide tu usuario ni tu contraseña.
+    </div>
+
+    <div class="seguro">
+      <span class="ic">🔒</span>
+      <span>No hay servidor propio, ni telemetría, ni analítica, ni publicidad. Lo que ves en la
+      pantalla no sale de tu equipo.</span>
+    </div>
+
+    <h2>1. Qué es esta extensión</h2>
+    <p>“Asistencias SIGES” es una extensión de navegador para docentes que ayuda a cargar las
+    asistencias del grado en la plataforma <b>SIGES</b> del MINED de El Salvador, evitando marcar
+    estudiante por estudiante a mano. Es una herramienta <b>independiente y no oficial</b>, sin
+    relación con el MINED.</p>
+
+    <h2>2. Qué datos maneja</h2>
+    <p>Para hacer su trabajo, la extensión trabaja con:</p>
+    <ul class="simple">
+      <li>La <b>lista de estudiantes</b> del grado (nombre y NIE) que <b>SIGES ya muestra</b> en la
+      pantalla donde estás.</li>
+      <li>Las <b>marcas de asistencia</b> del archivo que vos preparás (tu Excel, un reporte de otro
+      sistema o el informe de Google Meet de una clase en línea).</li>
+    </ul>
+
+    <h2>3. Cómo usa esos datos</h2>
+    <p>Los procesa <b>únicamente en tu computadora</b>, dentro de la sesión de SIGES que vos ya
+    abriste, con un solo fin: <b>marcar las inasistencias por vos</b> en SIGES. Esos datos no se
+    copian a ningún otro lado.</p>
+
+    <h2>4. Qué NO hace</h2>
+    <ul class="simple">
+      <li>No envía ningún dato a servidores propios ni a terceros. <b>No hay servidor.</b></li>
+      <li>No recopila, no vende ni comparte información con nadie.</li>
+      <li>No usa telemetría, analítica ni publicidad.</li>
+      <li>No pide ni almacena tu usuario ni tu contraseña de SIGES.</li>
+    </ul>
+
+    <h2>5. Lo único que se guarda (localmente)</h2>
+    <p>Para poder <b>reanudar una carga a medias</b> si cerrás la pestaña, la extensión guarda en tu
+    propio navegador un pequeño dato de progreso (por qué día iba). Se queda en tu equipo y podés
+    borrarlo quitando la extensión.</p>
+
+    <h2>6. Datos de estudiantes menores de edad</h2>
+    <p>La información de los estudiantes se trata <b>solo de forma local</b> en el equipo del docente
+    y <b>nunca se transmite</b> fuera de él. La herramienta marca siempre por el <b>NIE</b> del
+    estudiante (nunca por posición ni por nombre) para no marcar a la persona equivocada.</p>
+
+    <h2>7. Permisos que pide la extensión y por qué</h2>
+    <ul class="simple">
+      <li><code>storage</code>: solo para recordar el progreso de una carga a medias y poder
+      reanudarla. No guarda de forma permanente datos de estudiantes.</li>
+      <li>Acceso a <code>https://centros.siges.sv/*</code>: la extensión funciona
+      <b>exclusivamente dentro de SIGES</b>; necesita este acceso para leer la lista del grado y
+      marcar las asistencias en esa misma página. No accede a ningún otro sitio.</li>
+    </ul>
+
+    <h2>8. Cambios a esta política</h2>
+    <p>Si esta política cambia, se actualizará la fecha del encabezado y se publicará la nueva
+    versión en esta misma página.</p>
+
+    <h2>9. Contacto</h2>
+    <p>Por cualquier duda sobre privacidad, escribí a
+    <a href="mailto:agenciaposted@gmail.com">agenciaposted@gmail.com</a>.</p>
+
+    <footer>
+      <b>Asistencias SIGES</b> · Política de privacidad<br>
+      © 2026 Lic. Francisco Santiago Monzón Contreras · Pösted® · Todos los derechos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>

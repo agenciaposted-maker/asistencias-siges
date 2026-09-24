@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  Asistencias SIGES — Términos de uso para docentes
+  Copyright © 2026 Lic. Francisco Santiago Monzón Contreras · Pösted®
+  Todos los derechos reservados.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de uso — Asistencias SIGES</title>
+<style>
+  :root{
+    --azul:#2f5597; --azul-osc:#24406f; --azul-claro:#e8eef7; --azul-suave:#f4f7fc;
+    --texto:#1f2733; --suave:#5b6470; --ok:#1b7a3d; --ok-fondo:#eaf6ee;
+    --warn:#b8860b; --warn-fondo:#fff7e6; --borde:#dcdfe6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:"Segoe UI",system-ui,Arial,sans-serif; color:var(--texto);
+    line-height:1.55; margin:0; padding:24px; background:#f0f2f5; font-size:14px;
+  }
+  .hoja{
+    max-width:820px; margin:0 auto; background:#fff; padding:28px 34px;
+    border-radius:12px; box-shadow:0 2px 14px rgba(0,0,0,.08);
+  }
+  header{border-bottom:3px solid var(--azul); padding-bottom:12px; margin-bottom:16px;}
+  h1{font-size:22px; color:var(--azul); margin:0;}
+  .sub{color:var(--suave); margin-top:4px; font-size:13px;}
+  h2{font-size:15px; color:var(--azul); margin:22px 0 6px; padding-top:4px;}
+  p{margin:8px 0;}
+  .resumen{background:var(--azul-suave); border:1px solid var(--borde); border-radius:10px; padding:14px 18px; margin-bottom:8px;}
+  .resumen b{color:var(--azul-osc);}
+  .resumen ul{margin:8px 0 0; padding-left:20px;}
+  .resumen li{margin:5px 0;}
+  ol.terminos{padding-left:22px; margin:0;}
+  ol.terminos > li{margin:14px 0; padding-left:6px;}
+  ol.terminos > li::marker{font-weight:700; color:var(--azul);}
+  .titt{font-weight:700; color:var(--azul-osc);}
+  ul.simple{margin:6px 0; padding-left:20px;}
+  ul.simple li{margin:4px 0;}
+  .destacado{display:flex; gap:10px; background:var(--warn-fondo); border:1px solid #e6c14d; border-radius:9px; padding:12px 16px; margin:14px 0; font-size:13.5px;}
+  .destacado .ic{font-size:19px;}
+  .seguro{display:flex; gap:10px; background:var(--ok-fondo); border-radius:9px; padding:12px 16px; margin:14px 0; font-size:13.5px;}
+  .seguro .ic{font-size:19px;}
+  code{background:#eef1f6; padding:2px 6px; border-radius:5px; font-size:13px; font-family:Consolas,monospace; color:var(--azul-osc);}
+  a{color:var(--azul);}
+  footer{margin-top:22px; border-top:1px solid var(--borde); padding-top:12px; color:var(--suave); font-size:12px; text-align:center;}
+  .imprimir{text-align:center; margin:0 auto 14px; max-width:820px;}
+  .imprimir button{background:var(--azul); color:#fff; border:none; border-radius:8px; padding:9px 18px; font-size:13px; font-weight:600; cursor:pointer;}
+  @media print{
+    body{background:#fff; padding:0; font-size:12px;}
+    .hoja{box-shadow:none; max-width:100%; padding:0;}
+    .imprimir{display:none;}
+    ol.terminos > li{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="imprimir">
+    <button onclick="window.print()">🖨️ Imprimir o guardar como PDF</button>
+  </div>
+
+  <div class="hoja">
+    <header>
+      <h1>Términos de uso — “Asistencias SIGES”</h1>
+      <div class="sub">Para docentes · Versión 1.2.0 · Última actualización: septiembre de 2026</div>
+    </header>
+
+    <div class="resumen">
+      <b>En resumen (leé esto aunque no leas el resto):</b>
+      <ul>
+        <li>Esta herramienta te <b>ayuda a marcar la asistencia más rápido</b>, pero <b>la responsable seguís siendo vos</b>.</li>
+        <li>Trabaja dentro de <b>tu propia sesión</b> de SIGES. <b>No pide ni guarda tu usuario ni tu contraseña</b>, y <b>nada sale de tu computadora</b>.</li>
+        <li>Antes de marcar de verdad, usá el <b>“Modo práctica”</b> y al final <b>revisá el comprobante</b>.</li>
+        <li>Es una herramienta de <b>uso personal</b>: no la revendas ni la modifiques sin permiso.</li>
+        <li>Se entrega <b>“tal cual”</b>. Ante cualquier duda o falla, <b>marcá a mano</b> esa parte.</li>
+      </ul>
+    </div>
+
+    <ol class="terminos">
+      <li>
+        <span class="titt">Qué es y qué no es.</span>
+        “Asistencias SIGES” es una herramienta que automatiza el marcado de asistencias en SIGES a
+        partir de una lista que vos preparás. <b>No reemplaza tu criterio</b> ni te libera de tus
+        obligaciones como docente: es una ayuda para ahorrarte trabajo repetitivo.
+      </li>
+      <li>
+        <span class="titt">Tu responsabilidad.</span>
+        Todo lo que se registre en SIGES se hace <b>dentro de tu sesión y bajo tu responsabilidad</b>,
+        igual que si lo hicieras a mano. Vos sos responsable de:
+        <ul class="simple">
+          <li>Que la lista que subís sea correcta (los NIE, las faltas y los motivos).</li>
+          <li>Probar primero con el <b>Modo práctica</b> (no guarda nada) antes de marcar de verdad.</li>
+          <li><b>Revisar el comprobante</b> que genera la herramienta al terminar.</li>
+          <li>Corregir a mano cualquier cosa que no haya quedado bien.</li>
+        </ul>
+      </li>
+      <li>
+        <span class="titt">Privacidad y datos de estudiantes.</span>
+        La herramienta funciona <b>solo en tu computadora</b>: no envía información a ningún servidor,
+        no lleva estadísticas ni “telemetría”, y no comparte datos con nadie. Como manejás datos de
+        <b>menores de edad</b>, cuidá los archivos (las listas en Excel y los comprobantes) con la
+        misma responsabilidad que cualquier documento de tus estudiantes.
+      </li>
+      <li>
+        <span class="titt">Seguridad de tu cuenta.</span>
+        La herramienta <b>nunca te pide ni guarda tu usuario o contraseña</b> de SIGES. Trabaja sobre
+        la sesión que vos ya abriste. No la uses en computadoras que no sean de confianza y cerrá tu
+        sesión de SIGES cuando termines.
+      </li>
+      <li>
+        <span class="titt">Uso permitido.</span>
+        Se te concede el derecho de <b>instalar y usar</b> la herramienta para registrar asistencias
+        en <b>tu propia sesión</b>. Es un uso <b>personal e intransferible</b>.
+      </li>
+      <li>
+        <span class="titt">Lo que no está permitido.</span>
+        Sin permiso por escrito del autor, no podés: revender, publicar o compartir la herramienta con
+        terceros; modificarla o crear versiones derivadas; ni quitar los avisos de autor y de marca.
+        Si un colega la quiere, <b>pasale el contacto de abajo</b> en vez de repartir tu copia.
+      </li>
+      <li>
+        <span class="titt">Cumplimiento institucional.</span>
+        Antes de usarla, asegurate de que el uso de herramientas de apoyo esté <b>permitido por tu
+        institución y por las normas del MINED</b>. Vos sos quien decide usarla con tu sesión, así que
+        el cumplimiento de esas normas queda de tu lado.
+      </li>
+      <li>
+        <span class="titt">Sin garantía.</span>
+        La herramienta se entrega <b>“tal cual”</b>, sin garantías de ningún tipo. Aunque está hecha
+        con mucho cuidado y revisa la información antes de marcar, <b>puede haber fallas</b> (por
+        ejemplo, si SIGES cambia). En la máxima medida que permita la ley, el autor <b>no se hace
+        responsable</b> de daños o errores derivados del uso. Ante cualquier duda, marcá a mano.
+      </li>
+      <li>
+        <span class="titt">Propiedad y marca.</span>
+        “Asistencias SIGES” es propiedad de <b>Lic. Francisco Santiago Monzón Contreras</b>, bajo la
+        <b>marca registrada Pösted®</b>. Los términos legales completos están en el archivo
+        <code>LICENSE</code> que viene con la herramienta.
+      </li>
+      <li>
+        <span class="titt">Aceptación.</span>
+        Al instalar o usar la herramienta, aceptás estos términos. Si no estás de acuerdo, no la uses.
+      </li>
+    </ol>
+
+    <div class="seguro">
+      <span class="ic">🔒</span>
+      <span>Recordá: <b>sin servidor, sin contraseñas, sin telemetría.</b> Todo pasa en tu computadora,
+      dentro de la sesión que vos ya abriste.</span>
+    </div>
+
+    <div class="destacado">
+      <span class="ic">✅</span>
+      <span><b>Consejo de oro:</b> la primera vez y ante cualquier duda, dejá activado el
+      <b>Modo práctica</b> y revisá el <b>comprobante</b>. Marcar mal es peor que no marcar.</span>
+    </div>
+
+    <h2>Contacto</h2>
+    <p>Para permisos, licencias, dudas o para reportar un problema:
+    <a href="mailto:agenciaposted@gmail.com">agenciaposted@gmail.com</a></p>
+
+    <footer>
+      <b>Asistencias SIGES</b> · v1.2.0<br>
+      © 2026 Lic. Francisco Santiago Monzón Contreras · Pösted® · Todos los derechos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
